@@ -16,14 +16,14 @@ export const theme = extendTheme({
     },
   },
   fonts: {
-    heading: 'Roboto',
-    body: 'Roboto',
+    heading: 'Poppins',
+    body: 'Poppins',
   },
   styles: {
     global: {
       body: {
         bg: 'gray.50',
-        color: 'gray.900',
+        color: 'gray.50',
       },
     },
   },

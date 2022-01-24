@@ -7,8 +7,6 @@ export default function Header() {
       as="header"
       w="100%"
       h={100}
-      maxWidth={1440}
-      mx="auto"
       alignItems="center"
       justifyContent="center"
     >
