@@ -6,6 +6,8 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import SwiperSlideItem from './SwiperSlideItem';
+
 import 'swiper/css';
 
 export default function ContinentSwiper() {
@@ -41,211 +43,57 @@ export default function ContinentSwiper() {
         <Box className="swiper-button-prev"></Box>
 
         <SwiperSlide>
-          <Flex
-            w="100%"
-            h="100%"
-            align="center"
-            justify="center"
-            bgImage="/europa.png"
-            bgRepeat="no-repeat"
-            bgSize="cover"
-            textAlign="center"
-          >
-            <Link href="/continent/europa">
-              <a>
-                <Text
-                  fontSize={['3xl', '4xl', '5xl']}
-                  color="gray.100"
-                  fontWeight="bold"
-                >
-                  Europa
-                </Text>
-                <Text
-                  fontWeight="bold"
-                  color="gray.300"
-                  fontSize={['0.8rem', '1xl', '2xl']}
-                  mt={['2', '4']}
-                >
-                  O continente mais antigo.
-                </Text>
-              </a>
-            </Link>
-          </Flex>
+          <SwiperSlideItem
+            title="Europa"
+            description="O continente mais antigo."
+            imagePath="/europa.png"
+            href="/continent/europe"
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <Flex
-            w="100%"
-            h="100%"
-            align="center"
-            justify="center"
-            direction="column"
-            bgImage="/europa.png"
-            bgRepeat="no-repeat"
-            bgSize="cover"
-            textAlign="center"
-            bgPosition="center"
-          >
-            <Link href="/continent/northamerica">
-              <a href="">
-                <Heading
-                  fontSize={['3xl', '4xl', '5xl']}
-                  color="gray.100"
-                  fontWeight="bold"
-                >
-                  América do Norte
-                </Heading>
-                <Text
-                  fontWeight="bold"
-                  color="gray.300"
-                  fontSize={['0.8rem', '1xl', '2xl']}
-                  mt={['2', '4']}
-                >
-                  Um universo cosmopolita.
-                </Text>
-              </a>
-            </Link>
-          </Flex>
+          <SwiperSlideItem
+            title="América do Norte"
+            description="Um universo cosmopolita."
+            imagePath="/europa.png"
+            href="/continent/northamerica"
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <Flex
-            w="100%"
-            h="100%"
-            align="center"
-            justify="center"
-            direction="column"
-            bgImage="/europa.png"
-            bgRepeat="no-repeat"
-            bgSize="cover"
-            textAlign="center"
-            bgPosition="center"
-          >
-            <Link href="/continent/southamerica">
-              <a href="">
-                <Heading
-                  fontSize={['3xl', '4xl', '5xl']}
-                  color="gray.100"
-                  fontWeight="bold"
-                >
-                  América do Sul
-                </Heading>
-                <Text
-                  fontWeight="bold"
-                  color="gray.300"
-                  fontSize={['0.8rem', '1xl', '2xl']}
-                  mt={['2', '4']}
-                >
-                  Beleza natural exuberante.
-                </Text>
-              </a>
-            </Link>
-          </Flex>
+          <SwiperSlideItem
+            title="América do Sul"
+            description="Beleza natural exuberante."
+            imagePath="/europa.png"
+            href="/continent/southamerica"
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <Flex
-            w="100%"
-            h="100%"
-            align="center"
-            justify="center"
-            direction="column"
-            bgImage="/europa.png"
-            bgRepeat="no-repeat"
-            bgSize="cover"
-            textAlign="center"
-            bgPosition="center"
-          >
-            <Link href="/continent/asia">
-              <a href="">
-                <Heading
-                  fontSize={['3xl', '4xl', '5xl']}
-                  color="gray.100"
-                  fontWeight="bold"
-                >
-                  Ásia
-                </Heading>
-                <Text
-                  fontWeight="bold"
-                  color="gray.300"
-                  fontSize={['0.8rem', '1xl', '2xl']}
-                  mt={['2', '4']}
-                >
-                  Os mistérios do oriente.
-                </Text>
-              </a>
-            </Link>
-          </Flex>
+          <SwiperSlideItem
+            title="Ásia"
+            description="Os mistérios do oriente."
+            imagePath="/europa.png"
+            href="/continent/asia"
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <Flex
-            w="100%"
-            h="100%"
-            align="center"
-            justify="center"
-            direction="column"
-            bgImage="/europa.png"
-            bgRepeat="no-repeat"
-            bgSize="cover"
-            textAlign="center"
-            bgPosition="center"
-          >
-            <Link href="/continent/africa">
-              <a href="">
-                <Heading
-                  fontSize={['3xl', '4xl', '5xl']}
-                  color="gray.100"
-                  fontWeight="bold"
-                >
-                  África
-                </Heading>
-                <Text
-                  fontWeight="bold"
-                  color="gray.300"
-                  fontSize={['0.8rem', '1xl', '2xl']}
-                  mt={['2', '4']}
-                >
-                  Os safaris mais incríveis.
-                </Text>
-              </a>
-            </Link>
-          </Flex>
+          <SwiperSlideItem
+            title="África"
+            description="Os safaris mais incríveis."
+            imagePath="/europa.png"
+            href="/continent/africa"
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <Flex
-            w="100%"
-            h="100%"
-            align="center"
-            justify="center"
-            direction="column"
-            bgImage="/europa.png"
-            bgRepeat="no-repeat"
-            bgSize="cover"
-            textAlign="center"
-            bgPosition="center"
-          >
-            <Link href="/continent/oceania">
-              <a href="">
-                <Heading
-                  fontSize={['3xl', '4xl', '5xl']}
-                  color="gray.100"
-                  fontWeight="bold"
-                >
-                  Ocêania
-                </Heading>
-                <Text
-                  fontWeight="bold"
-                  color="gray.300"
-                  fontSize={['0.8rem', '1xl', '2xl']}
-                  mt={['2', '4']}
-                >
-                  O encontro da natureza com o futurismo.
-                </Text>
-              </a>
-            </Link>
-          </Flex>
+          <SwiperSlideItem
+            title="Ocêania"
+            description="O encontro da natureza com o futurismo."
+            imagePath="/europa.png"
+            href="/continent/oceania"
+          />
         </SwiperSlide>
       </Swiper>
     </Flex>
