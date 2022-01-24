@@ -14,12 +14,12 @@ export default function ContinentSwiper() {
   return (
     <Flex
       w="100%"
-      maxW={1240}
+      maxW={[1240, "100%"]}
       mx="auto"
-      mt={['5', '13']}
-      mb={['5', '10']}
-      h={['250px', '450px']}
-      px={['0', '20']}
+      mt={["5", "13"]}
+      mb={["5", "10"]}
+      h={["250px", "450px"]}
+      px={["0", "0", "10", "20"]}
     >
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}

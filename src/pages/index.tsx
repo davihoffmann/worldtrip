@@ -12,13 +12,13 @@ export default function Home() {
 
       {/* Categories */}
       <Flex maxWidth={1440} my="32" mx="140px">
-        <SimpleGrid columns={[1, 2, 2, 2, 5]} spacing={40}>
+        <SimpleGrid columns={[1, 1, 2, 3, 5]} spacing={40}>
           <Flex
             flexDirection="column"
             alignItems="center"
             justifyContent="center"
           >
-            <Image src="/cocktail.png" />
+            <Image src="/cocktail.png" alt="Vida Noturna" />
             <Text color="gray.600" fontSize="sm" fontWeight="600" mt="3">
               vida noturna
             </Text>
@@ -29,7 +29,7 @@ export default function Home() {
             alignItems="center"
             justifyContent="center"
           >
-            <Image src="/surf.png" />
+            <Image src="/surf.png" alt="praia" />
             <Text color="gray.600" fontSize="sm" fontWeight="600" mt="3">
               praia
             </Text>
@@ -40,7 +40,7 @@ export default function Home() {
             alignItems="center"
             justifyContent="center"
           >
-            <Image src="/building.png" />
+            <Image src="/building.png" alt="moderno" />
             <Text color="gray.600" fontSize="sm" fontWeight="600" mt="3">
               moderno
             </Text>
@@ -51,7 +51,7 @@ export default function Home() {
             alignItems="center"
             justifyContent="center"
           >
-            <Image src="/museum.png" />
+            <Image src="/museum.png" alt="clássico" />
             <Text color="gray.600" fontSize="sm" fontWeight="600" mt="3">
               clássico
             </Text>
@@ -62,7 +62,7 @@ export default function Home() {
             alignItems="center"
             justifyContent="center"
           >
-            <Image src="/earth.png" />
+            <Image src="/earth.png" alt="e mais..." />
             <Text color="gray.600" fontSize="sm" fontWeight="600" mt="3">
               e mais...
             </Text>
