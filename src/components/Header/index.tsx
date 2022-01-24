@@ -7,6 +7,7 @@ export default function Header() {
       as="header"
       w="100%"
       h={100}
+      p="7"
       alignItems="center"
       justifyContent="center"
     >
