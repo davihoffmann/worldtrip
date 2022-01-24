@@ -14,13 +14,15 @@ export default function Banner() {
       h={335}
       justify="space-around"
       backgroundImage="/background.png"
+      bgRepeat="no-repeat"
+      bgSize="cover"
     >
       <Box display="flex" flexDirection="column" justifyContent="center">
-        <Text fontSize="4xl" mb="4" fontWeight="600">
+        <Text fontSize="4xl" mb="4" color="gray.50" fontWeight="600">
           5 Continentes, <br />
           infinitas possibilidades.
         </Text>
-        <Text fontSize="lg" fontWeight="400">
+        <Text fontSize="lg" fontWeight="400" color="gray.50">
           Chegou a hora de tirar do papel a viagem que você
           <br /> sempre sonhou.
         </Text>

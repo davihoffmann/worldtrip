@@ -1,19 +1,12 @@
+import { Box, Divider, Flex, Image, SimpleGrid, Text } from '@chakra-ui/react';
+
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import {
-  Box,
-  Divider,
-  Flex,
-  Grid,
-  GridItem,
-  Image,
-  SimpleGrid,
-  Text,
-} from '@chakra-ui/react';
+import ContinentSwiper from '../components/ContinentSwiper';
 
 export default function Home() {
   return (
-    <Flex h="100vh" direction="column">
+    <Flex direction="column" alignItems="center">
       <Header />
       <Banner />
 
@@ -81,7 +74,13 @@ export default function Home() {
         <Divider width="90px" height="2px" bg="gray.800" />
       </Flex>
 
-      <Flex w="100%" alignItems="center" justifyContent="center" mt="20">
+      <Flex
+        w="100%"
+        alignItems="center"
+        justifyContent="center"
+        mt="20"
+        mb="10"
+      >
         <Text
           color="gray.600"
           fontSize="2xl"
@@ -94,13 +93,7 @@ export default function Home() {
         </Text>
       </Flex>
 
-      <Flex w="100%" alignItems="center" justifyContent="center" mt="20">
-        jhdkajshdjkad
-      </Flex>
-
-      <Flex w="100%" alignItems="center" justifyContent="center" mt="20">
-        jhdkajshdjkad
-      </Flex>
+      <ContinentSwiper />
     </Flex>
   );
 }
