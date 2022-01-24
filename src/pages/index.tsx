@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Image, SimpleGrid, Text } from '@chakra-ui/react';
+import { Divider, Flex, Image, SimpleGrid, Text } from '@chakra-ui/react';
 
 import Header from '../components/Header';
 import Banner from '../components/Banner';
