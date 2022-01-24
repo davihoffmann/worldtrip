@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Icon, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { FiAlertCircle } from 'react-icons/fi'
+import { CardCity } from "../../components/CardCity";
 import Header from "../../components/Header";
 
 interface ContinentDetailProps {
@@ -9,7 +10,7 @@ interface ContinentDetailProps {
 
 export default function ContinentDetail({ nome }: ContinentDetailProps) {
   return (
-    <Flex direction="column" alignItems="center">
+    <>
       <Header />
 
       <Flex
@@ -20,7 +21,7 @@ export default function ContinentDetail({ nome }: ContinentDetailProps) {
         bgSize="cover"
       />
 
-      <Flex mt="14" mx="10">
+      <Flex mt="14" mx={["10", "10", "20", "36"]}>
         <SimpleGrid columns={[1, 1, 2]} spacing={20}>
           <Text textAlign="justify">
             A Europa é, por convenção, um dos seis continentes do mundo. 
@@ -70,7 +71,45 @@ export default function ContinentDetail({ nome }: ContinentDetailProps) {
           </Flex>
         </SimpleGrid>
       </Flex>
-    </Flex>
+
+
+      <Flex mt={20} mx={["10", "10", "20", "36"]} direction="column">
+        <Heading textAlign="start" color="gray.600">Cidades +100</Heading>
+
+        <SimpleGrid columns={[1, 1, 2, 3, 4]} spacing="4" mt={10}>
+          <CardCity 
+            name="Londres" 
+            country="Reino Unido" 
+            imagePath="/cities/londres.png" 
+          />
+
+          <CardCity 
+            name="Paris" 
+            country="França" 
+            imagePath="/cities/londres.png" 
+          />
+
+          <CardCity 
+            name="Roma" 
+            country="Italia" 
+            imagePath="/cities/londres.png" 
+          />
+
+          <CardCity 
+            name="Praga"
+            country="República Tcheca" 
+            imagePath="/cities/londres.png" 
+          />
+
+          <CardCity 
+            name="Amsterdã" 
+            country="Holanda" 
+            imagePath="/cities/londres.png" 
+          />
+        </SimpleGrid>
+       
+      </Flex>
+    </>
   );
 }
 
