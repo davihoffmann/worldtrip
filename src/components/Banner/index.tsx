@@ -16,11 +16,11 @@ export default function Banner() {
       backgroundImage="/background.png"
     >
       <Box display="flex" flexDirection="column" justifyContent="center">
-        <Text fontSize="4xl" mb="4">
+        <Text fontSize="4xl" mb="4" fontWeight="600">
           5 Continentes, <br />
           infinitas possibilidades.
         </Text>
-        <Text fontSize="lg">
+        <Text fontSize="lg" fontWeight="400">
           Chegou a hora de tirar do papel a viagem que você
           <br /> sempre sonhou.
         </Text>
